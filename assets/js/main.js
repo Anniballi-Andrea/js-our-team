@@ -69,6 +69,11 @@ const teamMembers = [
 const containerEl = document.querySelector('.container')
 console.log(containerEl)
 //ciclo l'array per prendere i singoli oggetti
+for (let i = 0; i < teamMembers.length; i++) {
+    const teamMember = teamMembers[i];
+    console.log(teamMember)
+    
+}
 //mi prendo le singole chiavi di ogni oggetto
 //inserisco nel documento una nuova scheda per ogni oggetto contenuto dall'array
     
