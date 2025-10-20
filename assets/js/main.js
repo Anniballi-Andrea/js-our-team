@@ -72,9 +72,12 @@ console.log(containerEl)
 for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
     console.log(teamMember)
+    //mi prendo le singole chiavi di ogni oggetto
+    const {name, role, email, img} = teamMember
+    console.log(name, role, email, img)
     
 }
-//mi prendo le singole chiavi di ogni oggetto
+
 //inserisco nel documento una nuova scheda per ogni oggetto contenuto dall'array
     
 
