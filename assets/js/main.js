@@ -64,20 +64,45 @@ const teamMembers = [
           </div>*/
 
 // creare una pagina dedicata  in cui mostrare una card per ciascun componente.
-
 // mi prendo il nodo dell documento dove inserire la card.
 const containerEl = document.querySelector('.container')
+
+//creo una variabile che contiene il codice html da inserire 
+let teamMembersCards
+
 console.log(containerEl)
 //ciclo l'array per prendere i singoli oggetti
 for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
     console.log(teamMember)
     //mi prendo le singole chiavi di ogni oggetto
-    const {name, role, email, img} = teamMember
+    const { name, role, email, img } = teamMember
     console.log(name, role, email, img)
+    //creo una variabile che contiene le informazioni da aggiungere alla teamMembersCards
+    const teamMemberCard = `
+    <div class="card mb-3 bg-black text-white" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="./assets/img/${img}" class="img-fluid " alt="" style="height: 100%;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body ">
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">${role}</p>
+                    <a href="" class="card-link">${email}</a>
+                </div>
+            </div>
+        </div>
+    </div>`
+    console.log(teamMemberCard)
     
-}
 
+
+
+
+
+}
 //inserisco nel documento una nuova scheda per ogni oggetto contenuto dall'array
-    
+
+
 
