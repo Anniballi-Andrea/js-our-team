@@ -70,9 +70,9 @@ const teamMembers = [
 const rowEl = document.querySelector('.row')
 
 //creo una variabile che contiene il codice html da inserire 
-let teamMembersCards
+let teamMembersCards=''
 
-console.log(containerEl)
+//console.log(rowEl)
 //ciclo l'array per prendere i singoli oggetti
 for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
@@ -86,24 +86,25 @@ for (let i = 0; i < teamMembers.length; i++) {
         <div class="  bg-black text-white" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="./assets/img/female1.png" class="img-fluid " alt="" style="height: 100%;">
+                    <img src="./assets/${img}" class="img-fluid " alt="" style="height: 100%;">
                 </div>
                 <div class="col-md-8 p-5">
                     <div class="card-body ">
-                        <h5 class="card-title ">Laura Rossi</h5>
-                        <p class="card-text">Front-end Developer</p>
-                        <a href="" class="card-link">laurarossi@team.com</a>
+                        <h5 class="card-title ">${name}</h5>
+                        <p class="card-text">${role}</p>
+                        <a href="" class="card-link">${email}</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>`
-    console.log(teamMemberCard)
+    //console.log(teamMemberCard)
     //aggiorno teamMemberCards ad ogni ciclo in modo che contenga tutte le card
     teamMembersCards += teamMemberCard
+    rowEl.innerHTML = teamMembersCards
+
 }
 //inserisco nel documento una nuova scheda per ogni oggetto contenuto dall'array
-//containerEl.innerHTML = teamMembersCards
 
-
+rowEl.innerHTML = teamMembersCards
 
