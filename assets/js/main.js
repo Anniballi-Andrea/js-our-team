@@ -70,7 +70,7 @@ const teamMembers = [
 const rowEl = document.querySelector('.row')
 
 //creo una variabile che contiene il codice html da inserire 
-let teamMembersCards=''
+let teamMembersCards = ''
 
 //console.log(rowEl)
 //ciclo l'array per prendere i singoli oggetti
