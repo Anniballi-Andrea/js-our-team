@@ -47,3 +47,19 @@ const teamMembers = [
       img: "img/female3.png"
     }
   ];
+
+  /*<div class="card mb-3 bg-black text-white" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/img/female1.png" class="img-fluid " alt="" style="height: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body ">
+                            <h5 class="card-title">Laura Rossi</h5>
+                            <p class="card-text">Front-end Developer</p>
+                            <a href="" class="card-link">laurarossi@team.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>*/
+           
